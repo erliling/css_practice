@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer {
+        width: 500px;
+        background-color: gray;
+        border: 1px solid black;
+        /* solution1 */
+        /* height: 230px; */
+        /* solution2 text surround*/
+        /* float: left; */
+        /* solution3 */
+        /* overflow: hidden; */
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        border: 1px solid black;
+        margin: 10px;
+      }
+      .box1,
+      .box2,
+      .box3 {
+        float: left;
+      }
+      .box4 {
+        /* solution4 */
+        /* 消除前面所有浮动兄弟产生的影响，前提他自己不浮动，不能是行内元素（不能给高度） */
+        clear: both;
+        /* display: inline-block; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="box box1">1</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <!-- <div class="box box4">4</div> -->
+    </div>
+    <div style="background-color: orange">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magni
+      maiores incidunt laudantium deleniti adipisci facilis saepe vero porro
+      aliquid accusamus quod esse laborum error, repudiandae, sint consequuntur
+      quia doloremque!
+    </div>
+  </body>
+</html>

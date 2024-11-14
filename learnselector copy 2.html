@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .titlecls {
+        color: pink;
+      }
+      .authorcls {
+        color: blue;
+      }
+      /* 交集选择器 and */
+      /* h3.titlecls#h3id {
+        color: green;
+      } */
+      .reportcls {
+        color: green;
+      }
+      .paragraphcls {
+        color: red;
+      }
+      /* 并集选择器 or */
+      .titlecls,
+      .authorcls,
+      .reportcls,
+      .paragraphcls,
+      #pid {
+        font-size: 40px;
+        background-color: gray;
+      }
+      /* 后代选择器 */
+      /* .ulcls li {
+        color: aqua;
+      } */
+      ol li {
+        font-size: 30px;
+      }
+      /* ul a {
+        font-size: 30px;
+      } */
+
+      /* .ulcls a.acls {
+        font-size: 30px;
+      } */
+      /* 子代选择器 */
+      ul > li {
+        color: pink;
+      }
+      .ulcls > #divid > li {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="titlecls">
+      Al Jazeera office raided as Israel takes channel off air
+    </h1>
+    <br />
+    <h2 class="authorcls">By Vicky Wong</h2>
+    <h3 class="reportcls" id="h3id">BBC News</h3>
+    <p class="paragraphcls">
+      Israel's government has moved to shut down the operations of the Al
+      Jazeera television network in the country, branding it a mouthpiece for
+      Hamas.
+    </p>
+    <p class="paragraphcls">
+      Prime Minister Benjamin Netanyahu said the cabinet agreed to the closure
+      while the war in Gaza is ongoing.
+    </p>
+    <p id="pid">
+      Police raided the Qatari broadcaster's office at the Ambassador hotel in
+      Jerusalem on Sunday.
+    </p>
+    <ul class="ulcls">
+      <li>drawing</li>
+      <li>cooking</li>
+      <li>traveling</li>
+      <li>
+        <a href="#" class="acls">sleeping</a>
+        <a href="">sport</a>
+      </li>
+      <div id="divid">
+        <li>photograph</li>
+      </div>
+    </ul>
+    <hr />
+    <ol>
+      <li>drawing</li>
+      <li>cooking</li>
+      <li>traveling</li>
+      <li>sleeping</li>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .rich {
+        color: gold;
+      }
+      p.rich {
+        color: green;
+      }
+      /* .good {
+        color: pink;
+      } */
+      #h3id,
+      .rich,
+      .good {
+        font-size: 40px;
+        background-color: gray;
+        width: 400px;
+      }
+
+      /* ul li {
+        color: aqua;
+      }
+      .ulclass > li {
+        color: red;
+      }
+      li[title] {
+        color: blue;
+      } */
+
+      h3 + p {
+        color: red;
+      }
+      h3 ~ p {
+        color: blue;
+      }
+
+      p[class*="c"] {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="rich">
+      Al Jazeera office raided as Israel takes channel off air
+    </h1>
+    <br />
+    <h2 class="beauty">By Vicky Wong</h2>
+    <h3 id="h3id">BBC News</h3>
+    <p class="good">
+      Israel's government has moved to shut down the operations of the Al
+      Jazeera television network in the country, branding it a mouthpiece for
+      Hamas.
+    </p>
+    <p class="rich">
+      Prime Minister Benjamin Netanyahu said the cabinet agreed to the closure
+      while the war in Gaza is ongoing.
+    </p>
+    <p>
+      Police raided the Qatari broadcaster's office at the Ambassador hotel in
+      Jerusalem on Sunday.
+    </p>
+    <ul class="ulclass">
+      <li title="ultitle">li1</li>
+      <li>li2</li>
+      <li>li3</li>
+      <ul>
+        <li>li4</li>
+      </ul>
+    </ul>
+    <hr />
+    <ol>
+      <li>li1</li>
+      <li>li2</li>
+      <li>li3</li>
+    </ol>
+  </body>
+</html>

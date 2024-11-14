@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 600px;
+        background-color: skyblue;
+        /* soluion3 */
+        font-size: 0;
+      }
+
+      img {
+        width: 300px;
+        height: 300px;
+        /* solution1 */
+        /* vertical-align: bottom; */
+        /* solution2 图片独占一行，但需要没有文字*/
+        /* display: block; */
+      }
+      span {
+        /* solution3 */
+        font-size: 20px;
+        /* text can't be baseline */
+        vertical-align: bottom;
+      }
+    </style>
+  </head>
+  <body>
+    <div><img src="./images/visa.png" alt="" /><span>xg</span></div>
+  </body>
+</html>
